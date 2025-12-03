@@ -1,4 +1,8 @@
 // content.js
+if (typeof JSZip === 'undefined') {
+    console.error("JSZip failed to load! Please check if jszip.min.js is correctly included in manifest.json.");
+}
+
 
 // 截图逻辑
 async function captureAndScroll() {
